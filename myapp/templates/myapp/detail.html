@@ -8,4 +8,9 @@
 
 <h6> {{book.price}} </h6>
 
+
+<a class="btn btn-warning" href="{% url 'myapp:update' book.id %}">Update</a>
+
+<a class="btn btn-danger" href="{% url 'myapp:delete' book.id %}">Delete</a>
+
 {% endblock %}
